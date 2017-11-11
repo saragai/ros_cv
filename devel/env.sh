@@ -1,0 +1,1 @@
+/home/mech-user/vision_ws/src/my_cv_pkg/devel/.private/catkin_tools_prebuild/env.sh

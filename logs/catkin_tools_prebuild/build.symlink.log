@@ -1,0 +1,8 @@
+Symlinking /home/mech-user/vision_ws/src/my_cv_pkg/devel/./env.sh
+Symlinking /home/mech-user/vision_ws/src/my_cv_pkg/devel/./setup.sh
+Symlinking /home/mech-user/vision_ws/src/my_cv_pkg/devel/./setup.bash
+Symlinking /home/mech-user/vision_ws/src/my_cv_pkg/devel/./setup.zsh
+Symlinking /home/mech-user/vision_ws/src/my_cv_pkg/devel/./_setup_util.py
+Symlinking /home/mech-user/vision_ws/src/my_cv_pkg/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/mech-user/vision_ws/src/my_cv_pkg/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
+Symlinking /home/mech-user/vision_ws/src/my_cv_pkg/devel/lib/pkgconfig/catkin_tools_prebuild.pc

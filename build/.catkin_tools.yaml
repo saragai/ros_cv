@@ -1,0 +1,6 @@
+devel_space: /home/mech-user/vision_ws/src/my_cv_pkg/devel
+install: false
+install_space: /home/mech-user/vision_ws/src/my_cv_pkg/install
+profile: default
+source_space: /home/mech-user/vision_ws/src/my_cv_pkg/src
+workspace: /home/mech-user/vision_ws/src/my_cv_pkg

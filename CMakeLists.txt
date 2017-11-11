@@ -119,8 +119,6 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(my_cv_pkg_node src/my_cv_pkg_node.cpp)
-target_link_libraries(my_cv_pkg_node ${catkin_LIBRARIES})
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
 #   src/${PROJECT_NAME}/my_cv_pkg.cpp
@@ -198,3 +196,5 @@ target_link_libraries(my_cv_pkg_node ${catkin_LIBRARIES})
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+add_executable(my_cv_pkg_node src/my_cv_pkg_node.cpp)
+target_link_libraries(my_cv_pkg_node ${catkin_LIBRARIES})

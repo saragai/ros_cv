@@ -1,0 +1,17 @@
+<launch>
+	<node pkg="nodelet" type="nodelet" name="manager" args="manager" />
+	<node pkg="nodelet" type="nodelet" name="uvc_camera_node"
+		args="load uvc_camera/CameraNodelet manager" />
+	<node pkg="nodelet" type="nodelet" name="debayer"
+		args="load image_proc/debayer manager" />
+	<node pkg="nodelet" type="nodelet" name="rectify_mono"
+		args="load image_proc/rectify manager" />
+	<node pkg="nodelet" type="nodelet" name="rectify_color"
+		args="load image_proc/rectify manager" >
+		<remap from="image_mono" to="image_color" />
+		<remap from="image_rect" to="image_rect_color" />
+	</node>
+	<node pkg="image_view" type="image_view" name="image_view" >
+		<remap from="image" to="image_rect_color" />
+	</node>
+</launch>

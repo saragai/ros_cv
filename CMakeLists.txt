@@ -17,6 +17,10 @@ find_package(catkin REQUIRED COMPONENTS
   cv_bridge
   image_transport
   message_generation
+
+  genmsg
+  actionlib_msgs
+  actionlib
 )
 
 ## System dependencies are found with CMake's conventions
@@ -66,17 +70,21 @@ add_message_files(
 # )
 
 ## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
+add_action_files(
+  DIRECTORY
+  action
+  FILES
+  DoDishes.action
 #   Action1.action
 #   Action2.action
-# )
+)
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
    DEPENDENCIES
    std_msgs  # Or other packages containing msgs
    geometry_msgs
+   actionlib_msgs
 )
 
 ################################################
@@ -204,4 +212,6 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 add_executable(my_cv_pkg_node src/my_cv_pkg_node.cpp)
+add_executable(my_cv_findcircle_node src/my_cv_findcircle_node.cpp)
 target_link_libraries(my_cv_pkg_node ${catkin_LIBRARIES})
+target_link_libraries(my_cv_findcircle_node ${catkin_LIBRARIES})
